@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+        
+          tr{
+              font-weight: 600;
+              
+          }
+      </style>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="brand-logo col s12 m5 hide-on-med-and-down" style="font-family: 'Great Vibes', cursive; font-size: 3rem;">
+                       Lista de Ramais
+                    </div>
+                    <div class="input-field col s12 m7 right">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" id="search" class="white" placeholder="    Buscar Contato">                                             
+                    </div>
+                </div>
+            </div>
+        </nav>          
+    </div>
+    <div class="container" id="container">
+        <form action="#" id="formulario">
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="input-field">
+                        <input type="text" id="setor" autocomplete="off">
+                        <label for="setor">Setor</label>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="input-field">
+                        <input type="text" id="nome" autocomplete="off">
+                        <label for="nome">Nome</label>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="input-field">
+                        <input type="text" id="ramal" autocomplete="off">
+                        <label for="ramal">Ramal</label>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="input-field">
+                        <a href="#" class="btn-floating waves-effect waves-light red lighten-1"><i class="material-icons right">backup</i></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <table class="striped highlight">
+            <thead>
+                <tr>
+                    <th>Setor</th>
+                    <th>Nome</th>
+                    <th>Ramal</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        M.AutoInit()
+    </script>
+  </body>
+</html>
